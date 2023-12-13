@@ -11,8 +11,15 @@ uvicorn app.main:app --reload
 
 Aplikasi dapat di jalankan pada ```http://localhost:8000``` atau ```http://127.0.0.1:8000```, 8000 disini digunakan sebagai port default unutk mengakses aplikasi.
 
+Untuk melakukan migrasi database, dapat menjalankan perintah :
+```alembic upgrade head```
+atau dapat dengan cara menlakukan restore file .sql (file hasil dari dump) yang ada pada project ini.
+
+
 Dokumentasi API pada postman dapat dilihat pada link dibawah ini : 
 ```
 https://documenter.getpostman.com/view/26413086/2s9Ykj9i56
 ```
 atau dapat melakukan import pada postman dengan menggunakan file postman collection pada project ini.
+
+
